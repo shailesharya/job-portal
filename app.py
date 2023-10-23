@@ -12,7 +12,7 @@ app.secret_key = 'beekinTest'
 CORS(app)
 
 
-connection_string = "mongodb+srv://arya:1112@cluster0.u0pmbr0.mongodb.net/"
+connection_string = "mongodb+srv://<user>:<password>@cluster0.u0pmbr0.mongodb.net/"
 client = pymongo.MongoClient(connection_string)
 db = client['Beekin']
 collection = db['applications']
