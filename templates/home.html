@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Openings</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- add script
+    -->
+    <!-- <script src="script.js"></script> -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container-fluid mt-3">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+                <a class=" h4 navbar-brand text-secondary" href="#">Job Openings</a>
+            </nav>
+        </div>
+        
+    </header>
+
+    <!-- Job Listings -->
+    <div class="container mt-5">
+        <!-- <center> -->
+            <br>
+            <h3 class="mb-4 text-secondary">
+                Current Openings
+            </h3>
+        <!-- </center> -->
+        <div class="row" id="jobListings">
+
+            <!-- Job Listing Card 1 -->
+            <!-- <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Job Title 1</h5>
+                        <p class="card-text">Company: ABC Inc.</p>
+                        <p class="card-text">Location: City 1</p>
+                        <p class="card-text">Division: IT</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#jobDetailsModal1">View Details</a>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Job Listing Card 2 -->
+            <!-- <div class="col-md-4 mb-4">
+                <div class="card border-success" >
+                    <div class="card-body text-success">
+                        <h5 class="card-title">Job Title 2</h5>
+                        <p class="card-text">Company: XYZ Inc.</p>
+                        <p class="card-text">Location: City 2</p>
+                        <p class="card-text">Division: Marketing</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#jobDetailsModal2">View Details</a>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Job Listing Card 3 -->
+            <!-- <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Job Title 3</h5>
+                        <p class="card-text">Company: QRS Ltd.</p>
+                        <p class="card-text">Location: City 3</p>
+                        <p class="card-text">Division: Finance</p>
+                        
+                        <button class="btn btn-primary" onclick="openJobDetailsModal('Job Title 1', 'ABC Inc.', 'City 1', 'IT', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...')">View Details</button>
+
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Modal for Job Details -->
+            <div class="modal fade" id="jobDetailsModal" tabindex="-1" role="dialog" aria-labelledby="jobDetailsModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="jobDetailsModalLabel">Job Details</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body" id="modalBody">
+                            <!-- Job details will be populated here via JavaScript -->
+                        </div>
+                        <!-- <div class="modal-footer">
+                            <button type="button" class="btn btn-warning">Apply</button>
+                            <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+   
+    
+
+    <!-- Modal 2 (Repeat for additional job listings) -->
+
+    <!-- Include jQuery and Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
